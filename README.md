@@ -14,17 +14,16 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: Template de exercicio para criar EC2 e S3
 
 Resources:
-  MeuBucketS3:
-    Type: AWS::S3::Meu primeiro-bucket
-    Properties:
-      BucketName: meu-bucket-exercicio
+MeuBucketS3:
+Type: AWS::S3::Meu primeiro-bucket
+Properties:BucketName: meu-bucket-exercicio
 
-  MinhaInstanciaEC2:
-    Type: AWS::EC2::Instance
-    Properties:
-      InstanceType: t2.micro
-      ImageId: ami-0c02fb55956c7d316 
-      KeyName: minha-chave-ec2      
+MinhaInstanciaEC2:
+Type: AWS::EC2::Instance
+Properties:
+InstanceType: t2.micro
+ImageId: ami-0c02fb55956c7d316 
+KeyName: minha-chave-ec2      
 
 Já pelo Bash utilizei o comando:
 aws cloudformation create-stack
